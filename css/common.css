@@ -31,6 +31,7 @@ img {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 .flex_center {
   justify-content: center;
@@ -46,13 +47,16 @@ body {
   color: var(--primary);
 }
 
+section {
+  margin-bottom: 140px;
+}
+
 /* ------------------------ util items ----------------------- */
 .go_top {
   width: 60px;
   height: 60px;
   background-color: #fff;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
-  align-items: center;
   position: fixed;
   bottom: 30px;
   right: 30px;

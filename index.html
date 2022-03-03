@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="icon" href="./images/icon.png" />
     <title>Mars Project</title>
   </head>
   <body>
-    <!------------------------- go top ------------------------->
+    <!------------------------- go top -------------------------------->
     <div class="go_top flex flex_center">
       <i class="xi-arrow-up"></i>
     </div>
 
-    <!------------------------- full menu ------------------------->
+    <!------------------------- full menu ----------------------------->
+
     <div class="menu">
       <div class="inner">
         <ul class="menu_list flex flex_between">
@@ -84,17 +88,179 @@
       </div>
     </div>
 
+    <!------------------------- header -------------------------------->
+    <section class="header">
+      <div class="inner flex">
+        <div class="logo">
+          <a href="./index.html"><img src="./images/logo.png" alt="로고" /></a>
+        </div>
+
+        <ul class="nav flex">
+          <li><a href="#x">로그인</a></li>
+          <li><a href="#x">회원가입</a></li>
+          <li><a href="./gallery.html">갤러리</a></li>
+        </ul>
+
+        <div class="bars">
+          <i class="xi-bars"></i>
+        </div>
+      </div>
+    </section>
+    <!------------------------- main slider --------------------------->
+    <section class="hero">
+      <div class="inner">
+        <div class="slide_01">
+          <div class="item item_01"></div>
+          <div class="item item_02"></div>
+          <div class="item item_03"></div>
+        </div>
+
+        <div class="arrow"></div>
+        <div class="slide_text"></div>
+      </div>
+    </section>
+
+    <!------------------------- section slider ------------------------>
+    <section class="section_slide">
+      <div class="inner">
+        <div class="title_area">
+          <h4>금주의 Pick</h4>
+          <p>우주의 중심을 발견하는 날, 인간이 세계의 중심이 아님을 깨닫게 될 것이다.</p>
+          <div class="indicator"></div>
+        </div>
+        <div class="slide_02"></div>
+      </div>
+    </section>
+
+    <!------------------------- section card 01 ----------------------->
+    <section class="section_card_01">
+      <div class="inner">
+        <div class="title_area"></div>
+        <ul class="cards">
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!------------------------- section card 02 ----------------------->
+    <section class="section_card_02">
+      <div class="inner">
+        <div class="title_area"></div>
+        <ul class="cards">
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!------------------------- section map --------------------------->
+    <section class="section_map">
+      <div class="inner">
+        <div class="title_area"></div>
+      </div>
+      <div>다음지도 API</div>
+    </section>
+
+    <!------------------------- section instagram --------------------->
+    <section class="section_insta">
+      <div class="inner">
+        <div class="title_area"></div>
+        <ul class="cards">
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a href="#x"><img src="" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!------------------------- section footer ------------------------>
+    <section class="section_footer">
+      <div class="inner">푸터내용</div>
+    </section>
+
+    <!---------------------------- 제이쿼리 --------------------------->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-      var goTop = $(".go_top");
+      // ----------------full menu toggle---------------------
+      var bars = $(".bars");
       var menu = $(".menu");
       var close = $(".close");
 
-      goTop.on("click", function () {
+      bars.on("click", function () {
         menu.slideDown();
       });
 
       close.on("click", function () {
         menu.slideUp();
+      });
+
+      // ------------------ slick slider-------------------
+
+      $(".slide_01").slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
       });
     </script>
   </body>

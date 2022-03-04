@@ -206,25 +206,55 @@
     <!------------------------- section card 02 ----------------------->
     <section class="section_card_02">
       <div class="inner">
-        <div class="title_area"></div>
+        <div class="title_area">
+          <h3>우주! 어디까지 알고 있니?</h3>
+          <div class="flex flex_between">
+            <p>우주의 탄생과 진화 그리고 그 종말에 관한 이야기, 지금 시작해 볼까요.</p>
+            <a>전체보기 <i class="xi-angle-right-min"></i></a>
+          </div>
+        </div>
+
         <ul class="cards">
-          <li>
-            <a href="#x"><img src="" alt="" /></a>
+          <li class="card">
+            <img src="./images/section_card02/space_01.jpg" alt="" />
+            <div class="dimm"></div>
+            <p>Jupiter</p>
+            <i class="xi-plus-circle-o"></i>
           </li>
-          <li>
-            <a href="#x"><img src="" alt="" /></a>
+
+          <li class="card">
+            <img src="./images/section_card02/space_02.jpg" alt="" />
+            <div class="dimm"></div>
+            <p>Jupiter</p>
+            <i class="xi-plus-circle-o"></i>
           </li>
-          <li>
-            <a href="#x"><img src="" alt="" /></a>
+
+          <li class="card">
+            <img src="./images/section_card02/space_03.jpg" alt="" />
+            <div class="dimm"></div>
+            <p>Jupiter</p>
+            <i class="xi-plus-circle-o"></i>
           </li>
-          <li>
-            <a href="#x"><img src="" alt="" /></a>
+
+          <li class="card">
+            <img src="./images/section_card02/space_04.jpg" alt="" />
+            <div class="dimm"></div>
+            <p>Jupiter</p>
+            <i class="xi-plus-circle-o"></i>
           </li>
-          <li>
-            <a href="#x"><img src="" alt="" /></a>
+
+          <li class="card">
+            <img src="./images/section_card02/space_05.jpg" alt="" />
+            <div class="dimm"></div>
+            <p>Jupiter</p>
+            <i class="xi-plus-circle-o"></i>
           </li>
-          <li>
-            <a href="#x"><img src="" alt="" /></a>
+
+          <li class="card">
+            <img src="./images/section_card02/space_06.jpg" alt="" />
+            <div class="dimm"></div>
+            <p>Jupiter</p>
+            <i class="xi-plus-circle-o"></i>
           </li>
         </ul>
       </div>
@@ -233,9 +263,16 @@
     <!------------------------- section map --------------------------->
     <section class="section_map">
       <div class="inner">
-        <div class="title_area"></div>
+        <div class="title_area">
+          <h3>오시는 길</h3>
+          <p>우주로 가는 길은 당신과 아주 가까운 곳에 있습니다.</p>
+        </div>
       </div>
-      <div>다음지도 API</div>
+
+      <div
+        id="daumRoughmapContainer1646366531473"
+        class="root_daum_roughmap root_daum_roughmap_landing daum_map"
+      ></div>
     </section>
 
     <!------------------------- section instagram --------------------->
@@ -288,8 +325,16 @@
       <div class="inner">푸터내용</div>
     </section>
 
-    <!---------------------------- Jquery --------------------------->
+    <!---------------------------- slick --------------------------->
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--------------------------- kakaomap ------------------------------>
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+
     <script>
       // ----------------full menu toggle---------------------
       var bars = $(".bars");
@@ -332,6 +377,14 @@
           header.removeClass("active");
         }
       });
+
+      // ---------------------------kakaoMap-------------------------//
+      new daum.roughmap.Lander({
+        timestamp: "1646366531473",
+        key: "29cwf",
+        mapWidth: "640",
+        mapHeight: "360",
+      }).render();
     </script>
   </body>
 </html>

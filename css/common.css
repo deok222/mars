@@ -51,6 +51,31 @@ section {
   margin-bottom: 140px;
 }
 
+h2 {
+  font-size: 46px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--accent);
+}
+
+.btn_alt {
+  background-color: var(--accent-alt);
+}
+
+.title_area {
+  margin-bottom: 30px;
+}
+
 /* ------------------------ util items ----------------------- */
 .go_top {
   width: 60px;

@@ -209,6 +209,11 @@ section.header {
 }
 
 /* ------------------------- section slide_02 ----------------------- */
+.section_slide .slick-list {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
 .slide_02 .slide {
   position: relative;
   border-radius: 18px;

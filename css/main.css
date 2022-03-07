@@ -407,9 +407,6 @@ section.header {
 }
 
 /* <!------------------------- section insta  ------------------------> */
-.section_insta .title_area {
-}
-
 .section_insta .cards {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

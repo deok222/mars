@@ -80,6 +80,8 @@ h3 {
 .go_top {
   width: 60px;
   height: 60px;
+  text-align: center;
+  line-height: 60px;
   background-color: #fff;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
   position: fixed;
@@ -89,9 +91,56 @@ h3 {
   color: var(--primary);
   cursor: pointer;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .go_top:hover {
   background-color: var(--primary);
   color: #fff;
+}
+
+@media (max-width: 992px) {
+  section {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--accent);
+  }
+
+  .btn_alt {
+    background-color: var(--accent-alt);
+  }
+
+  .title_area {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title_area p {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 26px;
+  }
 }
